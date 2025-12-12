@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Étape 2</h1>
+
+<h2>Grille 5 × 5</h2>
+<table border="1" cellpadding="10">
+    <tr><td>D</td><td>Q</td><td>U</td><td>N</td><td>A</td></tr>
+    <tr><td>X</td><td>E</td><td>W</td><td>S</td><td>R</td></tr>
+    <tr><td>T</td><td>Y</td><td>C</td><td>I</td><td>O</td></tr>
+    <tr><td>P</td><td>I</td><td>M</td><td>L</td><td>B</td></tr>
+    <tr><td>I</td><td>C</td><td>Z</td><td>H</td><td>V</td></tr>
+</table>
+
+<p>83 85 73 86 65 78 84</p>
+
+<p>A vous</p>
+<input type="text" id="codeInput">
+<button id="submitCode">Valider</button>
+
+<script>
+    document.getElementById("submitCode").addEventListener("click", () => {
+        const code = document.getElementById("codeInput").value.trim().toUpperCase();
+        if (code === "SUIVANT") {
+            window.location.href = "page3.html";
+        } else {
+            alert("Code incorrect.");
+        }
+    });
+</script>
+
+</body>
+</html>
